@@ -13,22 +13,26 @@ def process_file_data(file_path: str) -> List[Tuple[str, str, str]]:
         A list of tuples, where each tuple contains (name, surname, points).
         Returns an empty list if the file is not found or contains no valid data.
     """
+
     # Implementujte logiku pro čtení souboru a parsování dat.
     # Soubor obsahuje data o studentech ve formátu: jméno - příjmení - body.
     # Funkce by měla vrátit seznam n-tic (jméno, příjmení, body).
     # Řádky, které neodpovídají formátu, ignorujte.
     # Pokud soubor neexistuje, vraťte prázdný seznam.
+
+    students = []
     try:
-        with open(file_path, 'r') as file:
+        with open(file_path, 'r', encoding='utf-8') as file:
             for line in file:
                 parts = line.strip().split('-')
                 if len(parts) == 3:
                     name = parts[0].strip()
                     surname = parts[1].strip()
                     points = parts[2].strip()
-                    yield (name, surname, points)
+                    students.append((name, surname, points))
     except FileNotFoundError:
         return []
+    return students
 
 def main():
     """
