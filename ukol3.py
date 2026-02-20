@@ -3,7 +3,7 @@ pairs = []
 
 # create pairs of names
 for i in range(len(names)):
-    if i + 1 < len(names):
-        pairs.append(names[i] + " - " + names[i+1])
+    for j in range(i + 1, len(names)):
+        pairs.append(names[i] + " - " + names[j])
 
 print(pairs)
