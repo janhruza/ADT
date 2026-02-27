@@ -1,3 +1,7 @@
+# 00_iterace_ve_slovniku.py reseni
+# autor reseni: Jan Hruza
+# datum: 2026-02-27
+
 def print_stock_items(stock: dict[str, int]) -> None:
     """
     Iterates through a dictionary using .items() and prints each product and its quantity.

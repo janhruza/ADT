@@ -1,3 +1,7 @@
+# 01_zpracovani_souboru_a_parsovani_dat.py reseni
+# autor reseni: Jan Hruza
+# datum: 2026-02-20
+
 from typing import List, Tuple
 
 def process_file_data(file_path: str) -> List[Tuple[str, str, str]]:

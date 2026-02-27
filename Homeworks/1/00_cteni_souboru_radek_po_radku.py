@@ -1,3 +1,6 @@
+# 00_cteni_souboru_radek_po_radku.py reseni
+# autor reseni: Jan Hruza
+# datum: 2026-02-20
 
 def main():
     """

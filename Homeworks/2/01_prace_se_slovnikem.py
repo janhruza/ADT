@@ -1,3 +1,6 @@
+# 01_prace_se_slovnikem.py reseni
+# autor reseni: Jan Hruza
+# datum: 2026-02-27
 
 """
 This module provides functions to manage a dictionary of users.

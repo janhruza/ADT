@@ -1,3 +1,6 @@
+# 02_sprava_skladu_s_ovocem.py reseni
+# autor reseni: Jan Hruza
+# datum: 2026-02-27
 
 def add_fruit(inventory: dict, fruit_name: str, quantity: int) -> dict:
     """
@@ -13,11 +16,16 @@ def add_fruit(inventory: dict, fruit_name: str, quantity: int) -> dict:
     """
     # Check if the fruit already exists in the warehouse (key exists).
     # If yes, add the quantity. If no, create a new entry.
+
+    # Implementujte logiku pro přidání nebo aktualizaci množství ovocí.
     if fruit_name in inventory:
+        # Přidání množství ovocí
         inventory[fruit_name] += quantity
     else:
+        # Vytvoření nového záznamu
         inventory[fruit_name] = quantity
 
+    # Vrácení aktualizovaného slovníku
     return inventory
 
 def main():

@@ -1,3 +1,7 @@
+# 02_parsovani_osobnich_udaju.py reseni
+# autor reseni: Jan Hruza
+# datum: 2026-02-20
+
 def parse_personal_data(data_string: str) -> tuple[str, str, int, int, int] | None:
     """
     Parses a string containing personal data in the format "name;surname;day.month.year".

@@ -1,3 +1,7 @@
+# 03_prumerna_vaha_podle_veku.py reseni
+# autor reseni: Jan Hruza
+# datum: 2026-02-20
+
 def calculate_average_weight_in_age_range(file_path: str, min_age: int, max_age: int) -> float | None:
     """
     Calculates the average weight of people in a specified age range from a CSV file.

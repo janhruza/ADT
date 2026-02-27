@@ -1,3 +1,7 @@
+# 03_nalezeni_duplicit_v_seznamu.py reseni
+# autor reseni: Jan Hruza
+# datum: 2026-02-27
+
 def find_duplicates(data: list[int]) -> set[int]:
     """
     Finds duplicate elements in a list of integers.
@@ -14,13 +18,23 @@ def find_duplicates(data: list[int]) -> set[int]:
     # zda jste ho již viděli. Pokud ano, přidejte ho do množiny duplicit.
     # V opačném případě ho přidejte do množiny viděných čísel.
     # Na konci vraťte množinu duplicit.
+
+    # Implementujte logiku pro nalezení duplicit.
     seen = set()
     duplicates = set()
+
+    # Projděte vstupní seznam a pro každé číslo zkontrolujte,
+    # zda jste ho již viděli. Pokud ano, přidejte ho do množiny duplicit.
+    # V opačném případě ho přidejte do množiny viděných čísel.
     for num in data:
         if num in seen:
+            # Pokud ano, přidejte ho do množiny duplicit.
             duplicates.add(num)
         else:
+            # V opačném případě ho přidejte do množiny viděných čísel.
             seen.add(num)
+
+    # Vrátěte množinu duplicit.
     return duplicates
 
 def demonstrate_find_duplicates(test_list: list[int]):
