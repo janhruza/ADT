@@ -1,6 +1,11 @@
 # Seznamy (list)
 # Teorie z 2. cviceni
 
+# seznam je objekt typu list
+# seznam je mutovany (muzeme ho zmenit)
+# seznam je dynamicky (muzeme ho zmenit)
+# seznam je indexovany (muzeme pristupovat k prvkum pomoci indexu)
+
 if __name__ == "__main__":
     a = []
     b = list()

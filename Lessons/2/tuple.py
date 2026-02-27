@@ -43,13 +43,13 @@ my_set = {1, 2, 3, 4, 5}
 my_dict = {1: "Ahoj", 2: "Nazdar", 3: "Čau", 4: "Servus", 5: "S pánembohem"}
 
 # prochazeni listu
-for (item:int in my_list):
+for item in my_list:
     print(item)
 
 # prochazeni setu - nemusi odpovidat poradi prvku
-for (item in my_set):
+for item in my_set:
     print(item)
 
 # prochazeni slovniku - nemusi odpovidat poradi rvku
-for (key, value in my_dict.items()):
+for key, value in my_dict.items():
     print(key, value)
