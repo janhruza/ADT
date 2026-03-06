@@ -1,3 +1,7 @@
+# Řešení vygenerované pomocí Google Gemini.
+# Řešení NEMUSÍ být správně!
+# Datum: 2026-03-06
+
 from collections import defaultdict
 import os
 import sys
